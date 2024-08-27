@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>5. Média</title>
+<script type="text/javascript" src="lib/Média.js"></script>			
+</head>
+<body>
+	<h1>Média</h1>
+	<p>
+		<cite>Escreva um programa que solicita três números ao usuário e retorna a média deles.
+		</cite>
+	</p>
+	<hr>
+<script type="text/javascript">
+	// Declaração de variáveis
+	var entrada, a, b, c, calculo, mensagem
+	// Entrada de dados
+	a = Number(prompt("Digite o valor de A: "))
+	b = Number(prompt("Digite o valor de B: "))
+	c = Number(prompt("Digite o valor de C: "))
+	// Processamento de dados
+	calculo = media(a, b, c);
+	mensagem = `A média entre ${a}, ${b} e ${c} é igual a ${calculo}`;
+	// Saida de dados
+	document.write(mensagem);
+</script>
+</body>
+</html>

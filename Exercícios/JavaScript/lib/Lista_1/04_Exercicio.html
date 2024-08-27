@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>4. Multiplicação</title>
+<script type="text/javascript" src="lib/Multiplicação.js"></script>
+</head>
+<body>
+	<h1>Multiplicação</h1>
+	<p>
+		<cite>4. Escreva um programa que solicita dois números e imprime o resultado da multiplicação entre os números.
+		</cite>
+	</p>
+	<hr>
+<script type="text/javascript">
+	// Declaração de variáveis
+	var entrada, a, b, multiplicar, mensagem
+	// Entrada de dados
+	entrada = prompt("Digite o valor de A: ");
+	a = Number(entrada);
+	entrada = prompt("Digite o valor de B: ");
+	b = Number(entrada);
+	//Processamento de dados
+	multiplicar = produto(a, b);
+	mensagem = `O produto de ${a} e ${b} é igual a ${multiplicar}`;
+	// Saida de dados
+	document.write(mensagem);
+</script>
+
+</body>
+</html>

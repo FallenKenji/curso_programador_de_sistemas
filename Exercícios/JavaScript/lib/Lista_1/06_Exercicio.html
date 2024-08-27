@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6. Divisão Inteira</title>
+<script type="text/javascript" src="lib/Divisão Inteira.js"></script>
+</head>
+<body>
+	<h1>Divisão Inteira</h1>
+	<p>
+		<cite>6. Escreva um programa que retorne o resultado da divisão inteira entre dois números inteiros.
+		</cite>
+	</p>
+	<hr>
+<script type="text/javascript">
+	// Declaração de variáveis
+	let a, b, resposta, mensagem;
+	// Entrada de dados
+	a = Number(prompt("Digite o dividendo: "));
+	b = Number(prompt("Digite o divisor: "));
+	// Processamento de dados
+	resposta = divisao(a, b);
+	mensagem = `A divisão inteira de ${a} e ${b} é igual a ${resposta}`;
+	// Saida de dados
+	document.write(mensagem);
+</script>
+</body>
+</html>
