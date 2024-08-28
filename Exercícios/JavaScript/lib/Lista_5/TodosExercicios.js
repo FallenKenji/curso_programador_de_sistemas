@@ -1,8 +1,8 @@
 function separarPalavras(text, separador) {
-	return text.split(separador);
+	const palavras = text.split(separador);
+	return palavras.map(palavra => palavra.trim());
 }
 
-console.log(separarPalavras("O rato roeu a roupa do rei de Roma", " "));   
 console.log(separarPalavras("João,Maria,José", ","));     
 console.log(separarPalavras("user1@gmail.com;user2@yahoo.com;user3@outlook.com", ";"));   
 console.log(separarPalavras("João,Maria,José", ","));   
@@ -17,4 +17,4 @@ console.log(separarPalavras("Lorem ipsum dolor sit amet,\nconsectetur adipiscing
 console.log(separarPalavras("Linha única sem quebras", "\n"));
 console.log(separarPalavras("Primeira linha de um texto.\n Segunda linha usando template strings.\n Terceira linha com mais detalhes.", "\n"));
 console.log(separarPalavras("Lorem ipsum dolor sit amet,\n consectetur adipiscing elit.\n Ut enim ad minim veniam.", "\n"));
-console.log(separarPalavras("Texto com linhas múltiplas e\n uso de templates strings\n para separação.", "\n"))
+console.log(separarPalavras("Texto com linhas múltiplas e\n uso de templates strings\n para separação.", "\n"));
